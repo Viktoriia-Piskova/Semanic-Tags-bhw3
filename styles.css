@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    color: blueviolet;
+}
+
+#mainContent {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+aside{
+    background-color: greenyellow;
+    align-self: flex-start;
+    width: 25%;
+    padding: 10px;
+}
+
+section{
+    background-color: lightseagreen;
+    overflow-y: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    position: relative;
+    bottom: 0px;
+    width: fit-content;
+}
