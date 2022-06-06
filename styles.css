@@ -1,12 +1,46 @@
 *{
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: rgba(158, 13, 3, 1);
 }
 
 header{
-    color: blueviolet;
+    background-color: rgba(10, 10, 10, 1);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-#mainContent {
+header li{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid white 1px;
+    margin: 5px;
+    padding: 5px 20px;
+    background-color: rgba(158, 13, 3, 1);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+header li:hover{
+    background-color: rgba(158, 13, 3, 0.5);
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main{
 
     display: flex;
     flex-direction: row-reverse;
@@ -15,18 +49,33 @@ header{
     align-items: baseline;
 }
 
+article{
+    border: solid ;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+article:hover{
+    background-color: rgba(10, 10, 10, 0.1);
+}
 aside{
-    background-color: greenyellow;
     align-self: flex-start;
     width: 25%;
     padding: 10px;
+    background-color: rgba(158, 13, 3, 1);
+    color: white;
+    border-radius: 10px;
+    align-self: baseline;
+    
 }
 
 section{
-    background-color: lightseagreen;
+    background-color: white;
     overflow-y: auto;
     width: 75%;
     padding: 10px;
+    
 }
 
 footer{
@@ -35,4 +84,16 @@ footer{
     position: relative;
     bottom: 0px;
     width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+footer p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+footer a{
+    color: white;
 }
